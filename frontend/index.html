@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Grouper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="upload-container">
+        <h2>Upload Images</h2>
+        <p>Select multiple images to group them based on similarity.</p>
+        <input type="file" id="image-upload" accept="image/*" multiple>
+        <div id="process-btn" onclick="processImages()" style="display: inline-block; background-color: #007aff; color: white; padding: 12px 25px; border-radius: 8px; cursor: pointer; text-align: center;">Process Images</div>
+    </div>
+
+    <div id="gallery-container">
+        <h2>Image Groups</h2>
+        <div id="image-groups"></div>
+    </div>
+    <script src="script.js?v=2"></script>
+</body>
+</html>
